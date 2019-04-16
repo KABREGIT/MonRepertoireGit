@@ -1,0 +1,27 @@
+<?php
+# FileName="Connection_php_mysql.htm"
+# Type="MYSQL"
+# HTTP="true"
+
+$hostname_MySQLConnect = "localhost";
+$database_MySQLConnect = "onix_commercial";
+$username_MySQLConnect = "root";
+$password_MySQLConnect = "";
+
+
+/*
+$hostname_MySQLConnect = "localhost";
+$database_MySQLConnect = "getonig_demo";
+$username_MySQLConnect = "root";
+$password_MySQLConnect = "";
+*/
+
+//getonig_demou with password SRg2vQ0fqnlQ
+$MySQLConnect = mysql_connect($hostname_MySQLConnect, $username_MySQLConnect, $password_MySQLConnect) or trigger_error(mysql_error(),E_USER_ERROR); 
+mysql_select_db($database_MySQLConnect,$MySQLConnect);
+
+
+//db: connectt_site
+//us: connectt_user
+//pw: Bu9zX6cz3bbd
+?>
